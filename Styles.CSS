@@ -1,0 +1,131 @@
+ul{
+    list-style-type: none;
+}
+
+h1{
+    margin: 4em 5em 0 0;
+    padding-left: 10em;
+}
+
+h2 {
+    text-align: center;
+    background-color: aqua;
+}
+
+table, th, td {
+    border: 1px solid black;
+    width: 50%;
+    flex: 1;
+    /* height: 80%; */
+    font-size: larger;
+ }
+
+body {
+    background-color: greenyellow;
+}
+
+img {
+    background-color: greenyellow;
+    float:inherit;
+    margin: 1em 1em 1em 1em;
+    max-width: 20%;
+    max-height: 20%;
+}
+
+@media(max-width: 720px) {
+    .content, .subjects {
+        display:flex;
+    }
+    
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subjects {
+    font-size: 14px; 
+    font-weight: 400; 
+    line-height: 16px;
+    letter-spacing: 0em;
+    /* text-align: center; */
+    width:auto !important;
+    margin: auto !important;
+    border-radius: 2em;
+    display: flex;
+ 
+}
+
+.school {
+    flex: 1;
+}
+
+.motivation {
+    border-radius: 1em;
+    width: 50%;
+    margin-left: 20em;
+}
+
+.qualityAssurance {
+    background-color: red;
+    border-radius: 1em;
+    margin: 1em 0.7em 1em 0.7em;
+    position: static;
+    flex: 1.5;
+}
+
+.qualityAssurance .img {
+    width: 50%;
+}
+
+.mathematics {
+    background-color: orangered;  
+    border-radius: 2em;
+    margin: 1em 0.7em 1em 0.7em; 
+    position: static;
+    flex: 1.5;
+}
+
+.marketing {
+    background-color: yellow;
+    border-radius: 1em;
+    margin: 1em 0.7em 1em 0.7em; 
+    position: static;
+    flex: 1.5;
+}
+
+.school{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    line-height: 100%;
+    padding-top: 0;
+    padding-bottom: 1em;
+    padding-left: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.subject {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    line-height: 100%;
+    padding-top: 0;
+    padding-bottom: 1em;
+    padding-left: 0;
+    text-align: left;
+    vertical-align: top;
+    display: flex;
+}
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+
+.content {
+    background-color: orangered;
+    display: flex;
+}
