@@ -1,131 +1,80 @@
-ul{
-    list-style-type: none;
+@media(min-width:720px) {
+     .subjects, .city{
+        display: flex;
+    }
 }
 
-h1{
-    margin: 4em 5em 0 0;
-    padding-left: 10em;
-}
-
-h2 {
-    text-align: center;
-    background-color: aqua;
-}
-
-table, th, td {
-    border: 1px solid black;
-    width: 50%;
-    flex: 1;
-    /* height: 80%; */
-    font-size: larger;
- }
-
+ 
 body {
-    background-color: greenyellow;
+    background-color: orangered;
+    text-align: justify;
+    flex: 1;
 }
+
 
 img {
     background-color: greenyellow;
-    float:inherit;
-    margin: 1em 1em 1em 1em;
-    max-width: 20%;
-    max-height: 20%;
+   
+
 }
 
-@media(max-width: 720px) {
-    .content, .subjects {
-        display:flex;
-    }
+.intro {
+    flex: 1;
+    background-color: brown;
+    width: 40%;
+    height: 30em;
+}
+
+.intro img {
+    flex: 1;
+    width: 20em;
+    margin: 0 0 4em 50em;
+    position: relative;
+    top: -4.5em;
+    background-color: yellowgreen;
+    padding: 4em;
+    border-radius: 10em;
+    
+    
     
 }
 
-.center {
-    margin-right: auto;
-    margin-left: auto;
+.name {
+    padding: 5em 0 0 em;
+    margin: 0em 0 0 5em;
+    background-color: aqua; 
+    width: 70%;
+    text-align: center;
+    font-weight:bold;
+    font-size: 200%;
+    position: relative;
+    
+
 }
 
 .subjects {
-    font-size: 14px; 
-    font-weight: 400; 
-    line-height: 16px;
-    letter-spacing: 0em;
-    /* text-align: center; */
-    width:auto !important;
-    margin: auto !important;
-    border-radius: 2em;
-    display: flex;
- 
-}
-
-.school {
     flex: 1;
-}
-
-.motivation {
-    border-radius: 1em;
-    width: 50%;
-    margin-left: 20em;
-}
-
-.qualityAssurance {
     background-color: red;
-    border-radius: 1em;
-    margin: 1em 0.7em 1em 0.7em;
-    position: static;
-    flex: 1.5;
-}
-
-.qualityAssurance .img {
-    width: 50%;
-}
-
-.mathematics {
-    background-color: orangered;  
-    border-radius: 2em;
-    margin: 1em 0.7em 1em 0.7em; 
-    position: static;
-    flex: 1.5;
-}
-
-.marketing {
-    background-color: yellow;
-    border-radius: 1em;
-    margin: 1em 0.7em 1em 0.7em; 
-    position: static;
-    flex: 1.5;
-}
-
-.school{
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    line-height: 100%;
-    padding-top: 0;
-    padding-bottom: 1em;
-    padding-left: 0;
-    text-align: left;
-    vertical-align: top;
+    width: auto;
 }
 
 .subject {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    line-height: 100%;
-    padding-top: 0;
-    padding-bottom: 1em;
-    padding-left: 0;
-    text-align: left;
-    vertical-align: top;
-    display: flex;
+    flex: 1;
+    background-color: blueviolet;
+    width: 40%
 }
 
-.clearfix {
-    overflow: auto;
-    zoom: 1;
+.center {
+    flex: 1;
+    background-color: aquamarine;
 }
 
-.content {
-    background-color: orangered;
-    display: flex;
+.city {
+    flex: 1;
+    background-color: green
 }
+
+.motivation {
+    flex: 1;
+    background-color: red;
+} 
