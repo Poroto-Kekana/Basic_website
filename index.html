@@ -6,18 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
         body {
             background-color: aquamarine;
+            background-image: url(mountain.jpg);
         }
-    </style>
 
+        .flexbox {
+            background-color: red;
+            margin: 2em 0 2em 0;
+            border: .1em solid greenyellow;
+            width:15%;
+            padding: 1em 0 1em 4em;
+        }
+
+        .grid {
+            background-color: yellow;
+            margin: 2em 0 2em 0;
+            border: .1em solid greenyellow;
+            width:15%;
+            padding: 1em 0 1em 4em;
+        }
+
+    </style>
 </head>
 
 <body>
-    <a href="my-webpage.html"></a>
-    <a href="my-webpage-grid.html"></a>
+    <div class="flexbox">
+        <span></span><a href="my-webpage.html">My flexbox Webpage</a></span>
+    </div>
+    <div class="grid">
+        <span><a href="my-webpage-grid.html">My grid Webpage</a></span>
+    </div>
+
 </body>
 
 </html>
