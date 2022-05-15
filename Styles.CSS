@@ -37,6 +37,7 @@ body {
     font-size: 170%;
     font-weight: 400;
     display: flex;
+    background-image: url(Images/mountain.jpg);
 }
 
 
@@ -52,9 +53,10 @@ img {
 .intro {
     flex: 1;
     background-color: red;
-    background-image: url(mountain.jpg);
+    background-image: url(Images/);
+    background-size: cover;
     width: auto;
-    height: 9em;
+    /* height: 9em; */
     margin: 1em 1em 0em 1em;
     padding: 0;
 }
@@ -81,12 +83,9 @@ img {
     font-size: 100%;
     position: relative;
     padding: .2m;
-    /* border: .1em solid greenyellow; */
 }
 
 .subjects {
-    flex: 1;
-    /* background-color: red; */
     flex: 1;
     background-color: rgb(251, 255, 0);
     margin-left: 1em;
