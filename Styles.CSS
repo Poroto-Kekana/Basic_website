@@ -1,9 +1,17 @@
-@media(min-width:720px) {
+@media(min-width:700px) {
 
+    .favorite,
     .subjects,
     .city {
         display: flex;
     }
+}
+
+.fav {
+    text-align: center;
+    /* background-color: rgb(0, 26, 255) ; */
+    /* color: rgb(255, 251, 0); */
+    flex: 1;
 }
 
 table,
@@ -12,6 +20,7 @@ td {
     border: 1px solid black;
     position:relative;
     right: 0em;
+    text-align: center;
 }
 
 ul {
@@ -26,8 +35,11 @@ h3 {
 h4 {
     text-align: center;
     position: relative;
-    top: -30px;
-    margin: 1em 1em 2em 1em;
+    top: -25px;
+    background-color: aqua;
+    border-radius: .2em;
+    width: 80%;
+    /* margin: 1em 1em 2em 1em; */
 }
 
 body {
@@ -37,7 +49,7 @@ body {
     font-size: 170%;
     font-weight: 400;
     display: flex;
-    background-image: url(Images/mountain.jpg);
+    background-image: url(Images/elephant-background.jpg);
 }
 
 
@@ -46,14 +58,15 @@ img {
     width: 60%;
     height: 40%;
     position: static;
-    margin: 0 1em 1em 5em;
+    margin: 0 1em 1em 4.8em;
+    padding: auto;
     flex: 1;
 }
 
 .intro {
     flex: 1;
     background-color: red;
-    background-image: url(Images/);
+    background-image: url(Images/elephants.webp);
     background-size: cover;
     width: auto;
     /* height: 9em; */
@@ -62,15 +75,20 @@ img {
 }
 
 .intro img {
-    width: 13.9%;
+    width: 16.0%;
     margin: 5em 10em 0em 0em;
+    padding: auto;
     position: relative;
-    top: -6.0em;
+    top: -6.1em;
     background-color: rgb(200, 255, 0);
     flex: 1;
-    left: .1em;
+    /* left: .1em; */
     /* padding: .1em; */
     /* float:initial; */
+}
+
+.flecs {
+    flex: 1;
 }
 
 .name {
@@ -82,7 +100,7 @@ img {
     font-weight: bold;
     font-size: 100%;
     position: relative;
-    padding: .2m;
+    padding-right: .2em;
 }
 
 .subjects {
@@ -96,7 +114,9 @@ img {
 }
  .subjects img {
     width: 70%;
-    margin: 2em;
+    margin: 0em;
+    padding-left: 1em;
+    background-color: yellow;
  }
 
 .subject {
@@ -112,7 +132,7 @@ img {
 .center {
     flex: 1;
     background-color: aquamarine;
-    margin: 0 1em 0 7em;
+    margin: 0 1em 0 1em;
 }
 
 .favorite {
@@ -148,4 +168,12 @@ img {
 .clearfix {
   overflow: auto;
   zoom: 1;
+}
+
+.favorite {
+    flex: 1;
+}
+
+.tab {
+    flex: 1;
 }
