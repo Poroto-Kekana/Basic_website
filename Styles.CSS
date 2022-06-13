@@ -1,8 +1,9 @@
-@media(min-width:700px) {
+@media(min-width: 720px) {
 
     .favorite,
     .subjects,
-    .city {
+    .city 
+    .bod{
         display: flex;
     }
 }
@@ -85,6 +86,11 @@ img {
     /* left: .1em; */
     /* padding: .1em; */
     /* float:initial; */
+}
+
+.city img {
+    width: 30%;
+    position:static0;
 }
 
 .flecs {

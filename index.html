@@ -9,42 +9,54 @@
     <style>
         body {
             background-color: aquamarine;
-            background-image: url(mountain.jpg);
+            background-image: url(Images/land.jpg);
+
         }
 
         .flexbox {
-            background-color: red;
-            margin: 2em 0 2em 0;
-            border: .1em solid greenyellow;
-            width:15%;
-            padding: 1em 0 1em 4em;
+            background-color: rgba(238, 255, 0, 0.719);
+            margin: 2em 0 2em 0em;
+            border: .5em solid rgba(255, 47, 47, 0.733);
+            padding: 1em 0 1em 0em;
         }
 
-        .grid {
-            background-color: yellow;
-            margin: 2em 0 2em 0;
-            border: .1em solid greenyellow;
-            width:15%;
-            padding: 1em 0 1em 4em;
+        .simplegrid {
+            background-color: rgba(0, 255, 242, 0.623);
+            margin: 2em 0 2em 0em;
+            border: .5em solid greenyellow;
+            padding: 1em 0 1em 0em;
+            
         }
 
         h1 {
             background-color: yellow;
             text-align: center;
             border-radius: .25em;
-
+            text-decoration-color: aquamarine;
         }
 
-        .land {
-            margin: 1em;
-            border-radius: .25em;
+        .main {
+            /* margin: 1em; */
+            /* border-radius: .25em; */
+            text-align: center;
             font-weight: bold;
             font-size: large;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-auto-flow: column;
+            flex: 1;
+            gap: 1em;
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        @media (min-width: 55em) {
+            .columns {
+                grid-auto-flow: column;
+            }
+        }
+
         .land:hover {
-            background-color: magenta;
+            background-color: rgba(157, 255, 0, 0.808);
         }
 
 
@@ -53,14 +65,15 @@
 </head>
 
 <body>
-     <h1>My Basic Webpages</h1>
-    <div class="land flexbox">
-        <span></span><a href="my-webpage.html">My flexbox Webpage</a></span>
+     <h1>Hi! Welcome to My Basic Webpages.</h1>
+    <div class= "main">
+        <div class="flexbox land">
+            <span></span><a href="my-webpage.html">My flexbox Webpage</a></span>
+        </div>
+        <div class="simplegrid land">
+            <span><a href="my-webpage-grid.html">My grid Webpage</a></span>
+        </div>
     </div>
-    <div class="land grid">
-        <span><a href="my-webpage-grid.html">My grid Webpage</a></span>
-    </div>
-
 </body>
 
 </html>
