@@ -1,12 +1,4 @@
-@media(min-width: 720px) {
 
-    .favorite,
-    .subjects,
-    .city 
-    .bod{
-        display: flex;
-    }
-}
 
 .fav {
     text-align: center;
@@ -51,6 +43,7 @@ body {
     font-weight: 400;
     display: flex;
     background-image: url(Images/elephant-background.jpg);
+    align-items: center;
 }
 
 
@@ -149,6 +142,7 @@ img {
     padding: 0 .5em .5em .5em;
     border: .2em solid green;
     text-align: justify;
+    align-items: center;
 }
 
 .city {
@@ -158,6 +152,7 @@ img {
     margin-right: 1em;
     padding: 0 .5em .5em .5em;
     border: .2em solid green;
+    align-items: center;
 }
 
 .motivation {
@@ -182,4 +177,14 @@ img {
 
 .tab {
     flex: 1;
+}
+
+@media(min-width: 720px) {
+
+    .favorite,
+    .subjects,
+    .city 
+    .body{
+        display: flex;
+    }
 }
